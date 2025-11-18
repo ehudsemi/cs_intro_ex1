@@ -1,7 +1,7 @@
 /******************
-Name:
-ID:
-Assignment:
+Name: Ehud Semidubersky
+ID: 217931336
+Assignment: ex1
 *******************/
 #include <stdio.h>
 
@@ -18,6 +18,19 @@ int main()
         b:
         Print “0”, if its integer representation is even.
         print “1” if its integer representation is odd. */
+
+    printf("Please enter a character\n");
+    char inputCharacter;
+    scanf(" %c", &inputCharacter);
+    int value = (int)inputCharacter;
+    printf("Its numerical value is: %d\n", value);
+    int oddOrEven = value & 1;
+    printf("0 for even, 1 for odd: %d\n", oddOrEven);
+
+
+
+
+    
 
     // 2's complement and other representations
     printf("\n2's complement to other representations:\n");
