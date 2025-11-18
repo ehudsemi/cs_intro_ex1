@@ -98,12 +98,12 @@ int main()
         Print their MSB’s. */
     printf("Please enter two numbers in octal and hexadecimal based\n");
     int octNum, hexNum;
-    scanf("%o %x\n", &octNum, &hexNum);
-    int octLSB = octNum & 1;
-    int hexLSB = hexNum & 1;
+    scanf("%o %x", &octNum, &hexNum);
+    int octLSB = octNum & 1;     //check the last bit if 1 or 0
+    int hexLSB = hexNum & 1;     //check the last bit if 1 or 0
     printf("LSBs: %d %d\n", octLSB, hexLSB);
-    int octMSB = (octNum >> 31) & 1;
-    int hexMSB = (hexNum >> 31) & 1;
+    int octMSB = (octNum >> 31) & 1;    //check the last first if 1 or 0 by shifting the number
+    int hexMSB = (hexNum >> 31) & 1;    //check the last first if 1 or 0 
     printf("MSBs: %d %d\n", octMSB, hexMSB);
     printf("Bye!\n");
 
