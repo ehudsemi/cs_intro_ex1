@@ -90,16 +90,21 @@ int main()
 
 
 
-
-
-
     // Different Bases
     printf("\nDifferent Bases:\n");
     /*  Scan two numbers:
         One in octal base, one in Hexadecimal base.
         Print their LSB’s.
         Print their MSB’s. */
-
+    printf("Please enter two numbers in octal and hexadecimal based\n");
+    int octNum, hexNum;
+    scanf("%o %x\n", &octNum, &hexNum);
+    int octLSB = octNum & 1;
+    int hexLSB = hexNum & 1;
+    printf("LSBs: %d %d\n", octLSB, hexLSB);
+    int octMSB = (octNum >> 31) & 1;
+    int hexMSB = (hexNum >> 31) & 1;
+    printf("MSBs: %d %d\n", octMSB, hexMSB);
     printf("Bye!\n");
 
     return 0;
