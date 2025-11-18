@@ -37,6 +37,17 @@ int main()
     /*. Scan a negative integer. [2’s complement].
         Print its value in 1’s complement.
         Print its value as unsigned. */
+    printf("Please enter a negative integer\n");
+    int inputNum;
+    scanf(" %d", &inputNum);
+    int onesComplement = -(~inputNum);
+    printf("1's complement: %d\n", onesComplement);
+    unsigned unsignedNumber = (unsigned)inputNum;
+    printf("unsigned: %u\n", unsignedNumber);
+
+
+
+
 
     // Shifting right and left
     printf("\nShifting right and left:\n");
@@ -44,6 +55,18 @@ int main()
         The first one - the value you will play with.
         The second and the third - how much to shift right and left, respectively.
         Print the value after shifting right and then shifting left. */
+    printf("Please enter 3 integers\n");
+    int inputNum2, rightShift, leftShift;
+    scanf(" %d%d%d", &inputNum2, &rightShift, &leftShift );
+    int shiftedNum = (inputNum2 >> rightShift) << leftShift;
+    printf("After shifting right and left: %d\n", shiftedNum);
+
+
+
+
+
+
+        
 
     // Even - Odd
     printf("\nEven - Odd:\n");
