@@ -96,7 +96,7 @@ int main()
         One in octal base, one in Hexadecimal base.
         Print their LSB’s.
         Print their MSB’s. */
-    printf("Please enter two numbers in octal and hexadecimal based\n");
+    printf("Please enter two numbers in octal and hexadecimal bases\n");
     int octNum, hexNum;
     scanf("%o %x", &octNum, &hexNum);
     int octLSB = octNum & 1;     //check the last bit if 1 or 0
